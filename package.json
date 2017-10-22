@@ -1,0 +1,10 @@
+{
+  "name": "webcomponents",
+  "version": "1.0.0",
+  "description": "WebComponents CustomElements és Template demonstráció.",
+  "author": "Krisztián Kapitány (ramoryan@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^1.0.17"
+  }
+}

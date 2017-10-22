@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <title>WebComponents - CustomElements és Template demonstráció</title>
+</head>
+<body>
+  <!-- ezt a templatet fogja használni a my-templated-component -->
+  <template id="my-templated-component">
+    <div class="person"></div>
+  </template>
+
+  <div style="border: 1px solid black; padding: 5px;">
+    A csodás fejlesztők:
+
+    <!-- Fontos, hogy legyen zárótag! Ez nem JSX! -->
+    <my-templated-component name="Igor" alterego="Mesebeli Jóarc"></my-templated-component>
+    <my-templated-component name="Peti" alterego="Radírrally Pilóta"></my-templated-component>
+    <my-templated-component name="zlt" alterego="Démonűző"></my-templated-component>
+    <my-templated-component name="ramy" alterego="Értékteremtő Kapitány"></my-templated-component>
+  </div>
+
+  <!-- Ez egy template nélküli komponens, demonstrálva a lifecycle eseményeket. -->
+  <my-component background="green"></my-component>
+
+  <!-- Szükséges polyfill -->
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-hi-ce.js"></script>
+
+  <!-- A komponenseink -->
+  <script src="MyTemplatedComponent.js"></script>
+  <script src="MyComponent.js"></script>
+</body>
+</html>
